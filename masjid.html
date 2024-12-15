@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Masjid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            text-align: center;
+            padding: 30px;
+            background-color: #e0f7fa;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .info, .donations, .news {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info div {
+            flex: 1;
+            text-align: center;
+        }
+        .info img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .donations table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .donations table th, .donations table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .news {
+            display: flex;
+            gap: 20px;
+        }
+        .news article {
+            flex: 1;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WP Masjid</h1>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#saldo">Saldo</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="beranda" class="banner">
+        <img src="img/masjid.jpg" alt="Masjid">
+    </section>
+
+    <section id="tentang" class="info">
+        <div>
+            <h2>Masjid At-Taqwa</h2>
+            <p>Jalan Karet Tapan No. 30, Gunung Agung, Surabaya, Jawa Timur</p>
+        </div>
+        <div>
+            <img src="img/fifi.jpg" alt="Ketua Takmir">
+            <h3>Agus Hermawan</h3>
+            <p>Ketua Takmir</p>
+        </div>
+        <div>
+            <p><strong>Pusat Informasi:</strong></p>
+            <p>083815251385</p>
+        </div>
+    </section>
+
+    <section id="saldo" class="donations">
+        <h2>Saldo Infak</h2>
+        <p><strong>Total Saldo: Rp. 8.540.000</strong></p>
+        <h3>Laporan Infak</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jumlah</th>
+                    <th>Tanggal</th>
+                    <th>Dari</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rp. 3.000.000</td>
+                    <td>13 Sep 2017</td>
+                    <td>Richard Amandari</td>
+                </tr>
+                <tr>
+                    <td>Rp. 5.000.000</td>
+                    <td>10 Sep 2017</td>
+                    <td>Rahmad Seto</td>
+                </tr>
+                <tr>
+                    <td>Rp. 350.000</td>
+                    <td>08 Sep 2017</td>
+                    <td>Zulfa</td>
+                </tr>
+                <!-- Tambahkan data lainnya di sini -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="kontak" class="news">
+        <article>
+            <h3>Kontak Kami</h3>
+            <p>Silakan hubungi nomor di atas untuk informasi lebih lanjut.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WP Masjid. All rights reserved.</p>
+    </footer>
+</body>
+</html>
